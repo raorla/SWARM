@@ -1,0 +1,52 @@
+{
+  "formatVersion": 1,
+  "pack": {
+    "id": "saas-b2b",
+    "version": "0.1.0",
+    "label": "SaaS B2B / build in public",
+    "description": "Pack de contrôle. Sert au test d'agnosticisme : le même code doit tourner dessus sans modification.",
+    "domainBrief": "Fondateurs et opérateurs de SaaS B2B : acquisition, rétention, pricing, métriques (ARR, churn, CAC, payback), organisation d'équipe, build in public. Le ton est direct, chiffré, allergique aux généralités de LinkedIn. La valeur ajoutée vient d'un chiffre réel, d'un contre-exemple vécu ou d'une distinction que l'auteur du post a manquée.",
+    "languages": ["en", "fr"],
+    "keywords": [
+      "arr", "mrr", "churn", "retention", "cac", "ltv", "payback", "pricing",
+      "onboarding", "activation", "plg", "product led growth", "sales led",
+      "cold email", "outbound", "inbound", "seo", "positioning", "icp",
+      "saas", "b2b", "bootstrapped", "runway", "burn", "hiring", "founder"
+    ],
+    "negativeKeywords": [
+      "growth hack", "hustle", "grind", "10x engineer", "thread 🧵",
+      "here's how", "steal my", "dm for", "link in bio"
+    ],
+    "watchlist": [],
+    "blocklist": [],
+    "additionalBlockedTopics": [
+      "licenciements nominatifs et situations individuelles d'emploi",
+      "critique nominative d'un concurrent identifiable"
+    ],
+    "lexicon": {
+      "preferred": ["rétention", "activation", "positionnement", "payback", "churn", "cohorte"],
+      "banned": [
+        "growth hack", "game changer", "disruptif", "synergies", "10x",
+        "secret sauce", "no brainer", "low hanging fruit"
+      ]
+    },
+    "allowedAngles": ["counterpoint", "data", "anecdote", "question", "resource"],
+    "evWeights": {
+      "reach": 1.0,
+      "nicheRelevance": 1.5,
+      "freshness": 0.8,
+      "saturationPenalty": 1.1,
+      "authorAffinity": 1.4
+    },
+    "thresholds": {
+      "maxReplyCount": 150,
+      "maxAgeMinutes": 180,
+      "minEvScore": 0.35
+    },
+    "promptFragments": {
+      "whatGoodLooksLike": "Un chiffre issu d'une expérience réelle, avec son contexte (taille, segment, période). Une distinction que l'auteur du post a écrasée. Un contre-exemple précis plutôt qu'une objection générale. Nommer un arbitrage plutôt qu'une bonne pratique.",
+      "whatOutsidersGetWrong": "Ils répondent par des principes au lieu de cas. Ils citent des métriques sans contexte de segment. Ils écrivent en registre LinkedIn : phrases nominales, retours à la ligne dramatiques, conclusion inspirante. Ils sont d'accord trop vite.",
+      "criticExtraRules": "Rejeter toute variante qui n'apporte qu'un accord ou une reformulation. Rejeter toute métrique citée sans contexte. Rejeter le registre LinkedIn."
+    }
+  }
+}

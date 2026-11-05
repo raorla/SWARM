@@ -1,0 +1,56 @@
+{
+  "formatVersion": 1,
+  "pack": {
+    "id": "memecoin",
+    "version": "0.1.0",
+    "label": "Memecoin / culture on-chain",
+    "description": "Pack pilote. Culture, mèmes et mécanique on-chain — jamais de signal de prix.",
+    "domainBrief": "Communauté memecoin et culture on-chain : mèmes, dynamiques de communauté, mécanique de lancement et de liquidité, comportements de marché observés comme phénomène social. Le ton est rapide, lettré en références internes, allergique au marketing. La valeur ajoutée vient de l'observation juste ou de la mécanique bien expliquée, jamais de l'enthousiasme.",
+    "languages": ["en", "fr"],
+    "keywords": [
+      "memecoin", "onchain", "on-chain", "liquidity", "liquidity pool", "bonding curve",
+      "rug", "rugpull", "launchpad", "fair launch", "stealth launch", "snipe",
+      "mev", "sandwich", "dex", "amm", "lp", "burn", "supply", "float",
+      "community takeover", "cto", "dev wallet", "holder", "holders", "airdrop",
+      "meme", "ticker", "narrative", "rotation", "degen", "solana", "base", "ethereum"
+    ],
+    "negativeKeywords": [
+      "giveaway", "airdrop claim", "dm me", "click my link", "guaranteed",
+      "100x", "1000x", "next 100x", "financial advice", "not financial advice",
+      "pump it", "moon soon", "buy now", "presale", "whitelist spot", "referral"
+    ],
+    "watchlist": [],
+    "blocklist": [],
+    "additionalBlockedTopics": [
+      "liquidation personnelle et pertes financières individuelles",
+      "accusations de fraude non établies contre une personne nommée",
+      "doxxing ou identification d'un développeur anonyme"
+    ],
+    "lexicon": {
+      "preferred": ["onchain", "liquidité", "float", "supply", "narratif", "rotation", "communauté"],
+      "banned": [
+        "100x", "1000x", "to the moon", "moonshot", "gem", "hidden gem",
+        "financial advice", "guaranteed returns", "easy money", "don't miss",
+        "ape in", "last chance", "buy the dip", "price target"
+      ]
+    },
+    "allowedAngles": ["counterpoint", "data", "anecdote", "question", "joke"],
+    "evWeights": {
+      "reach": 1.2,
+      "nicheRelevance": 1.6,
+      "freshness": 1.8,
+      "saturationPenalty": 1.3,
+      "authorAffinity": 1.0
+    },
+    "thresholds": {
+      "maxReplyCount": 120,
+      "maxAgeMinutes": 45,
+      "minEvScore": 0.4
+    },
+    "promptFragments": {
+      "whatGoodLooksLike": "Une observation qu'un initié aurait pu faire et que personne n'a encore écrite dans le fil. Une mécanique expliquée en une phrase claire (comment une courbe de bonding se comporte, pourquoi un float bas produit tel effet). Un humour sec, jamais forcé. La brièveté est un signe d'appartenance : deux lignes valent mieux qu'un paragraphe.",
+      "whatOutsidersGetWrong": "Ils sur-expliquent, ils s'enthousiasment, ils ponctuent d'emojis, ils emploient le vocabulaire du marketing crypto ('gem', 'moon', 'ape in') que la communauté associe aux comptes payés. Ils confondent participer à une culture et vendre quelque chose. Ils écrivent des phrases trop longues et trop propres.",
+      "criticExtraRules": "Rejeter toute variante qui suggère une direction de prix, même implicitement (« ça va être intéressant », « tôt sur ce coup »). Rejeter tout emploi d'un terme de la liste bannie. Rejeter tout ce qui pourrait se lire comme une incitation à acheter. Une réponse qui ne pourrait pas être publiée par quelqu'un n'ayant aucune position sur le sujet est à rejeter."
+    }
+  }
+}

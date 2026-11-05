@@ -1,0 +1,52 @@
+@import 'tailwindcss';
+
+/**
+ * Thème sombre par défaut, aligné sur la palette de X — SPEC §3.
+ * Le side panel vit à côté de X : une palette dissonante donne l'impression d'un outil
+ * greffé plutôt que d'un copilote.
+ */
+@theme {
+  --color-x-bg: #000000;
+  --color-x-surface: #16181c;
+  --color-x-surface-2: #202327;
+  --color-x-border: #2f3336;
+  --color-x-text: #e7e9ea;
+  --color-x-muted: #71767b;
+  --color-x-accent: #1d9bf0;
+  --color-x-success: #00ba7c;
+  --color-x-warning: #ffd400;
+  --color-x-danger: #f4212e;
+
+  --font-sans:
+    'TwitterChirp', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-x-bg);
+  color: var(--color-x-text);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  /* Le side panel est étroit : on évite tout défilement horizontal parasite. */
+  overflow-x: hidden;
+}
+
+/* Focus visible obligatoire : le Flux est piloté au clavier (SPEC §8). */
+:focus-visible {
+  outline: 2px solid var(--color-x-accent);
+  outline-offset: 2px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-x-border);
+  border-radius: 4px;
+}

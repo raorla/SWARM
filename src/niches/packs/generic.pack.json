@@ -1,0 +1,35 @@
+{
+  "formatVersion": 1,
+  "pack": {
+    "id": "generic",
+    "version": "0.1.0",
+    "label": "Générique (aucune niche configurée)",
+    "description": "Pack de repli neutre, actif avant l'onboarding. Volontairement restrictif : sans niche définie, le produit doit se taire plutôt que parler de tout.",
+    "domainBrief": "Aucune niche configurée. Ne répondre que lorsque l'apport est manifeste et vérifiable, et rester en retrait par défaut. Ce pack existe pour que le système soit inerte, pas bavard, tant que l'utilisateur n'a pas défini son terrain.",
+    "languages": ["fr", "en"],
+    "keywords": [],
+    "negativeKeywords": [],
+    "watchlist": [],
+    "blocklist": [],
+    "additionalBlockedTopics": [],
+    "lexicon": { "preferred": [], "banned": [] },
+    "allowedAngles": ["question", "resource"],
+    "evWeights": {
+      "reach": 1.0,
+      "nicheRelevance": 2.0,
+      "freshness": 1.0,
+      "saturationPenalty": 1.0,
+      "authorAffinity": 1.0
+    },
+    "thresholds": {
+      "maxReplyCount": 60,
+      "maxAgeMinutes": 60,
+      "minEvScore": 0.7
+    },
+    "promptFragments": {
+      "whatGoodLooksLike": "Un apport factuel, vérifiable, court. En l'absence de niche définie, s'abstenir est la bonne réponse par défaut.",
+      "whatOutsidersGetWrong": "Ils commentent tout. Sans terrain défini, chaque réponse ressemble à du remplissage.",
+      "criticExtraRules": "Seuil de rejet volontairement élevé : sans niche configurée, rejeter tout ce qui n'est pas manifestement utile."
+    }
+  }
+}
